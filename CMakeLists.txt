@@ -1,17 +1,17 @@
 cmake_minimum_required(VERSION 3.1)
 
+##
+## PROJECT
+## name and version
+##
+project(nlohmann_json VERSION 3.9.1 LANGUAGES CXX)
+
 ###############
 # ASI default settings
 list(APPEND CMAKE_MODULE_PATH "$ENV{ASV_CMAKE}")
 include(asv_cmake_defaults)
 asv_cmake_defaults( )
 ###############
-
-##
-## PROJECT
-## name and version
-##
-project(nlohmann_json VERSION 3.9.1 LANGUAGES CXX)
 
 ##
 ## INCLUDE
