@@ -6,6 +6,13 @@ cmake_minimum_required(VERSION 3.1)
 ##
 project(nlohmann_json VERSION 3.11.2 LANGUAGES CXX)
 
+###############
+# ASI default settings
+list(APPEND CMAKE_MODULE_PATH "$ENV{ASV_CMAKE}")
+include(asv_cmake_defaults)
+asv_cmake_defaults( )
+###############
+
 ##
 ## MAIN_PROJECT CHECK
 ## determine if nlohmann_json is built as a subproject (using add_subdirectory) or if it is the main project
